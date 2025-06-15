@@ -14,19 +14,96 @@ body {
 
 main#container {
     display: grid;
-    justify-items: center;
+    justify-content: center;
 }
 
-main > header {
+main > header > h1{
     color: black;
     font-weight: bold;
     font-size: 2.7em;
+    margin-bottom: 25px;
 }
 
-button {
-   display: block;
+section.products {
+    margin-bottom: 20px;
 }
 
-button > p {
-    display: inline-block;
+section.products > img {
+    width: 275px;
+    border-radius: 15px;
+}
+
+section.products > p {
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: -5px;
+}
+
+section.products > p.name {
+    font-weight: 400;
+    color: grey;
+}
+
+section.products > p.price {
+    color: hsl(14, 86%, 42%);
+}
+
+section.products > button {
+   display: flex;
+   width: 170px;
+   height: 45px;
+   border-radius: 30px;
+   background-color: white;
+   border: solid white;
+   box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.563);
+   transform: translate(30%, -60%);
+}
+section.products > button > img {
+    display: block;
+    width: 28px;
+    margin-left: 22px;
+}
+
+section.products > button:hover {
+    background-color: hsl(14, 86%, 42%);
+    border: solid hsl(14, 86%, 42%);
+    cursor: pointer;
+    transition: border, background-color, 0.5s;
+}
+
+section.products > button:hover > img {
+    filter: brightness(0) invert(1);
+    transition: filter, 0.5s;
+}
+
+section.products > button:hover > p {
+    color: white;
+    transition: color, 0.5s;
+}
+
+section.products > button > p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 14px;
+}
+
+section#cart {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+section#cart > h1 {
+    color: hsl(14, 86%, 42%);
+    margin-bottom: 50px;
+}
+
+section#cart > p {
+   text-align: center;
+}
+
+section#cart > img {
+    display: block;
+    margin: auto;
 }

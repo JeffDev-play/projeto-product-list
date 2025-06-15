@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+section.products > picture > img {
+    width: 450px; 
+    /* transition: width 1s; */
+}
+
+section.products > button {
+   width: 220px;
+   height: 55px;
+   transform: translate(47%, -60%);
+   /* transition: transform width height 1s; */
+}
+
+section.products > button > img {
+    width: 35px;
+    margin-left: 22px;
+}
+
+section.products > button > p {
+    font-size: 1.2em;
+    padding: 16px;
+}

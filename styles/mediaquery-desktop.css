@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+main#container {
+   
+    grid-template-columns: 201px 201px 201px 400px;
+    grid-template-rows: (5, 200px);
+    gap: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+main > header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+section.products > picture > img {
+    width: 200px;
+}
+
+section.products > button {
+    width: 170px;
+    height: 45px;
+    transform: translate(10%, -60%);
+}
+
+section.products > button > p {
+    font-size: 1em;
+    padding: 14px;
+}
+
+section#velvetprod {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+section#brownieprod {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+section#pannaprod {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+section#cart {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}

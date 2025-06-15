@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/style.css">
-  
+  <link rel="stylesheet" href="styles/mediaquery-tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="styles/mediaquery-desktop.css" media="screen and (min-width: 992px)">
   <title>Frontend Mentor | Product list with cart</title>
   <style>
     .attribution { font-size: 11px; text-align: center; margin: 20px; }
@@ -19,7 +20,10 @@
     </header>
 
     <section id="walfleprod" class="products">
-      <img src="assets/images/image-waffle-mobile.jpg" alt="image waffle">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-waffle-desktop.jpg">
+        <img src="assets/images/image-waffle-mobile.jpg" alt="image waffle">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -30,7 +34,10 @@
     </section>
 
     <section id="bruleeprod" class="products">
-      <img src="assets/images/image-creme-brulee-mobile.jpg" alt="image brulee">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-creme-brulee-desktop.jpg">
+        <img src="assets/images/image-creme-brulee-mobile.jpg" alt="image brulee">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -41,7 +48,10 @@
     </section>
 
     <section id="macaronprod" class="products">
-      <img src="assets/images/image-macaron-mobile.jpg" alt="image macaron">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-macaron-desktop.jpg">
+        <img src="assets/images/image-macaron-mobile.jpg" alt="image macaron">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -52,7 +62,10 @@
     </section>
 
     <section id="tiramisuprod" class="products">
-      <img src="assets/images/image-tiramisu-mobile.jpg" alt="image tiramisu">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-tiramisu-desktop.jpg">
+        <img src="assets/images/image-tiramisu-mobile.jpg" alt="image tiramisu">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -63,7 +76,10 @@
     </section>
 
     <section id="pistachioprod" class="products">
-      <img src="assets/images/image-baklava-mobile.jpg" alt="image baklava">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-baklava-desktop.jpg">
+        <img src="assets/images/image-baklava-mobile.jpg" alt="image baklava">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -74,7 +90,10 @@
     </section>
 
     <section id="meringueprod" class="products">
-      <img src="assets/images/image-meringue-mobile.jpg" alt="image pie">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-meringue-desktop.jpg">
+        <img src="assets/images/image-meringue-mobile.jpg" alt="image pie">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -85,7 +104,10 @@
     </section>
 
     <section id="velvetprod" class="products">
-      <img src="assets/images/image-cake-mobile.jpg" alt="image cake">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-cake-desktop.jpg">
+        <img src="assets/images/image-cake-mobile.jpg" alt="image cake">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -96,7 +118,10 @@
     </section>
 
     <section id="brownieprod" class="products">
-      <img src="assets/images/image-brownie-mobile.jpg" alt="image brownie">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-brownie-desktop.jpg">
+        <img src="assets/images/image-brownie-mobile.jpg" alt="image brownie">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>
@@ -107,7 +132,10 @@
     </section>
 
     <section id="pannaprod" class="products">
-      <img src="assets/images/image-panna-cotta-mobile.jpg" alt="image panna cotta">
+      <picture>
+        <source media="(min-width: 992px)" srcset="assets/images/image-panna-cotta-desktop.jpg">
+        <img src="assets/images/image-panna-cotta-mobile.jpg" alt="image panna cotta">
+      </picture>
       <button class="add">
         <img src="assets/images/icon-add-to-cart.svg" alt="Icon add cart">
         <p>Add to Cart</p>

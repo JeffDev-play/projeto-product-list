@@ -28,9 +28,10 @@ section.products {
     margin-bottom: 20px;
 }
 
-section.products > img {
-    width: 275px;
+section.products > picture > img {
+    width: 275px; 
     border-radius: 15px;
+    transition: width 1s;
 }
 
 section.products > p {
@@ -57,7 +58,9 @@ section.products > button {
    border: solid white;
    box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.563);
    transform: translate(30%, -60%);
+   transition: width height transform 1s;
 }
+
 section.products > button > img {
     display: block;
     width: 28px;
@@ -84,6 +87,7 @@ section.products > button:hover > p {
 section.products > button > p {
     color: rgb(0, 0, 0);
     font-weight: bold;
+    font-size: 1em;
     padding: 14px;
 }
 

@@ -91,6 +91,62 @@ section.products > button > p {
     padding: 14px;
 }
 
+section.products > div.selection {
+   display: flex;
+   position: absolute;
+   width: 170px;
+   height: 45px;
+   border-radius: 30px;
+   background-color: hsl(14, 86%, 42%);
+   border: solid hsl(14, 86%, 42%);
+   box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.563);
+   transform: translate(30%, -160%);
+   transition: width height transform 1s;
+}
+
+div.selection > button.increment {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+div.selection > button.increment:hover {
+    cursor: pointer;
+}
+
+
+div.selection > p.quantity {
+    color: white;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 78px;
+    margin: auto;
+}
+
+div.selection > button.decrement {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 22px;
+    height: 22px;
+    margin-left: 132px;
+    margin-top: 8px;
+}
+
+div.selection > button.decrement {
+    cursor: pointer;
+}
+
+div.selection > button.decrement > img {
+    margin-bottom: 3px;
+}
+
 section#cart {
     background-color: white;
     border-radius: 15px;

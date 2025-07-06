@@ -157,6 +157,8 @@ div.selection > button.decrement > img {
 }
 
 section#cart {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 15px;
     padding: 30px;
@@ -165,14 +167,117 @@ section#cart {
 
 section#cart > h1 {
     color: hsl(14, 86%, 42%);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-section#cart > p {
+section#cart > div.selectedprod 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#cart > div.selectedprod > section > p.descri {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+section#cart > div.selectedprod > section > p.multi {
+    display: inline-block;
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+section#cart > div.selectedprod > section > p.pricecurrent {
+    display: inline-block;
+    color: hsl(14, 25%, 72%);
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+section#cart > div.selectedprod > section > p.pricetotal {
+    display: inline-block;
+    color: hsl(7, 20%, 60%);
+    font-weight: 600;
+}
+
+section#cart > div.selectedprod > div > button {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    margin-top: 12px;
+    border: 1px solid hsl(14, 25%, 72%);
+    background-color: rgba(128, 128, 128, 0);
+    border-radius: 80px;
+}
+
+section#cart > div.selectedprod > div > button:hover {
+    cursor: pointer;
+    border: 1px solid hsl(12, 20%, 44%);
+}
+
+section#cart > div.selectedprod > div > button:hover > img {
+    filter: brightness(50%) saturate(0);
+}
+section#cart > hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid hsl(13, 31%, 94%);
+}
+
+section#cart > div.ordertotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section#cart > div.ordertotal > p.total {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+section#cart > div.carbon {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(14, 86%, 42%, 0.126);
+    border: 0px solid;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+section#cart > div.carbon > img {
+    margin-left: 8px;
+    margin-right: 2px;
+}
+
+section#cart > div.carbon > p {
+    display: inline-block;
+    color: hsl(14, 86%, 42%);
+    font-size: 12px;
+    margin-top: 17px;
+}
+
+section#cart > button.confirm {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    height: 40px;
+    border: 0px solid;
+    border-radius: 40px;
+}
+
+section#cart > button.confirm:hover {
+    cursor: pointer;
+     background-color: hsl(14, 86%, 29%);
+}
+
+section#cart > p.noitems {
    text-align: center;
 }
 
-section#cart > img {
+section#cart > img.empty {
     display: block;
     margin: auto;
 }

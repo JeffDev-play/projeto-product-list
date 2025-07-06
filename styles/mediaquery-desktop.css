@@ -52,7 +52,6 @@ div.selection > button.increment {
     height: 22px;
     margin-left: 11px;
     margin-top: 9px;
-    transition: width, height, 1s;
 }
 
 div.selection > button.decrement {
@@ -92,4 +91,8 @@ section#cart {
     grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 5;
+}
+
+section#cart > div.carbon > p {
+    font-size: 14px;
 }

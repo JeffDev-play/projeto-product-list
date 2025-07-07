@@ -210,6 +210,8 @@ section#cart > div.selectedprod > div > button {
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 1px;
+    min-height: 21px;
+    padding-bottom: 1px;
     margin-top: 12px;
     border: 1px solid hsl(14, 25%, 72%);
     background-color: rgba(128, 128, 128, 0);

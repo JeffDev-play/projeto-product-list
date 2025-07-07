@@ -3,7 +3,7 @@
 main#container {
    
     grid-template-columns: 201px 201px 201px 400px;
-    grid-template-rows: (5, 200px);
+   
     gap: 20px;
     margin: auto;
     margin-top: 30px;
@@ -86,13 +86,64 @@ section#pannaprod {
     grid-column-end: 4;
 }
 
-section#cart {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
+section#pistachioprod {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
+section#meringueprod {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+section#tiramisuprod {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+section#cart {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;     
+    max-height: 480px;      
+    overflow-y: scroll;       
+    height: auto; 
+   
+}
+
+section#cart > div.selectedprod > div > button.removeitem {
+    min-height: 21px;
+    padding-bottom: 1px;
+}
+
+section#cart > div.carbon {
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    min-width: 100px;
+}
+
+section#cart > div.carbon > img {
+    width: 43px;
+}
 section#cart > div.carbon > p {
     font-size: 14px;
+    margin-right: 10px;
 }
+
+section#cart > button.confirm {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    min-height: 50px;
+}
+

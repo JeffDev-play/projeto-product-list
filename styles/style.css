@@ -170,6 +170,10 @@ section#cart > h1 {
     margin-bottom: 40px;
 }
 
+section#cart > h1 > p {
+    display: inline-block;
+}
+
 section#cart > div.selectedprod 
 {
     display: flex;
@@ -280,4 +284,8 @@ section#cart > p.noitems {
 section#cart > img.empty {
     display: block;
     margin: auto;
+}
+
+section#cart > .viewempty {
+    display: flex;
 }

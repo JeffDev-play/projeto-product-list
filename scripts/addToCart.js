@@ -16,6 +16,7 @@ function addCart(event) {
 
         const cart = document.querySelector("section#cart")
         const title = cart.children[0]
+        const quantityCartTotal = title.querySelector("p")
         const selectedProd = document.createElement("div")
         const sectionDescri = document.createElement("section")
         const descri = document.createElement("p")
@@ -27,7 +28,6 @@ function addCart(event) {
         const imageButton = document.createElement("img")
         const line = document.createElement("hr")
 
-        const quantityCartTotal = title.querySelector("p")
         quantityCartTotal.textContent = Number(quantityCartTotal.textContent) + 1
         
         descri.textContent = product.querySelector("p.namecomplete").textContent
@@ -105,10 +105,10 @@ function addCart(event) {
          orderTotalElement.textContent = "$" + (orderTotalCart + Number(priceCurrent.textContent.replace(/[^\d,.-]/g, ''))).toFixed(2)
 
         const incrementB = selection.querySelector("button.increment")
-        incrementB.addEventListener("click", function() {
-            let quantity = selection.querySelector("p.quantity")
+        const incrementBFunc = function() {
+            const quantity = selection.querySelector("p.quantity")
 
-            quantity.innerHTML = Number(quantity.innerHTML) + 1
+            quantity.textContent = Number(quantity.textContent) + 1
             const currentQuantity = Number(multi.textContent.replace(/[^\d,.-]/g, '')) + 1
             multi.textContent = currentQuantity + "x"
 
@@ -120,15 +120,16 @@ function addCart(event) {
             orderTotalCart = parseFloat(orderTotalElement.textContent.replace(/[^\d,.-]/g, ''))
             orderTotalElement.textContent = "$" + (orderTotalCart + Number(priceCurrent.textContent.replace(/[^\d,.-]/g, ''))).toFixed(2)
 
-        })
+        }
+        incrementB.addEventListener("click", incrementBFunc)
 
         const decrementB = selection.querySelector("button.decrement")
-        decrementB.addEventListener("click", function() {
-            let quantity = selection.querySelector("p.quantity")
+        const decrementBFunc = function() {
+            const quantity = selection.querySelector("p.quantity")
 
-            if (Number(quantity.innerHTML) > 1)
+            if (Number(quantity.textContent) > 1)
             {
-                quantity.innerHTML = Number(quantity.innerHTML) - 1
+                quantity.textContent = Number(quantity.textContent) - 1
                 const currentQuantity = Number(multi.textContent.replace(/[^\d,.-]/g, '')) - 1
                 multi.textContent = currentQuantity + "x"
 
@@ -136,8 +137,32 @@ function addCart(event) {
 
                 const priceTotalCurrent = (parseFloat(priceCurrent.textContent.replace(/[^\d,.-]/g, '')) * currentQuantity).toFixed(2)
                 priceTotal.textContent = "$" + priceTotalCurrent
+
+                orderTotalCart = parseFloat(orderTotalElement.textContent.replace(/[^\d,.-]/g, ''))
+                orderTotalElement.textContent = "$" + (orderTotalCart - Number(priceCurrent.textContent.replace(/[^\d,.-]/g, ''))).toFixed(2)
             }
 
             
-        })
+        }
+        decrementB.addEventListener("click", decrementBFunc)
+
+        buttonRemove.addEventListener("click", function() {
+         const price = parseFloat(priceTotal.textContent.replace(/[^\d,.-]/g, ''));
+         const currentTotal = parseFloat(orderTotalElement.textContent.replace(/[^\d,.-]/g, ''));
+
+         const newTotal = (currentTotal - price).toFixed(2);
+         orderTotalElement.textContent = "$" + newTotal;
+
+         quantityCartTotal.textContent = Number(quantityCartTotal.textContent) - Number(multi.textContent.replace(/[^\d,.-]/g, ''));
+         selection.style.display = "none"
+         const quantity = selection.querySelector("p.quantity")
+         quantity.textContent = 1
+        
+         incrementB.removeEventListener("click", incrementBFunc)
+         decrementB.removeEventListener("click", decrementBFunc)
+
+          if (selectedProd) selectedProd.remove();
+          if (line) line.remove();
+});
+
 }

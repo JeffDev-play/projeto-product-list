@@ -279,8 +279,10 @@ section#cart > button.confirm:hover {
      background-color: hsl(14, 86%, 29%);
 }
 
-section#cart > p.noitems {
-   text-align: center;
+section#cart > .viewempty {
+    display: flex;
+    justify-content: center;
+    
 }
 
 section#cart > img.empty {
@@ -288,6 +290,4 @@ section#cart > img.empty {
     margin: auto;
 }
 
-section#cart > .viewempty {
-    display: flex;
-}
+

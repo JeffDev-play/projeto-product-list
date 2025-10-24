@@ -2,14 +2,12 @@
 
 section.products > picture > img {
     width: 450px; 
-    /* transition: width 1s; */
 }
 
 section.products > button {
    width: 220px;
    height: 55px;
    transform: translate(47%, -60%);
-   /* transition: transform width height 1s; */
 }
 
 section.products > button > img {
@@ -31,7 +29,6 @@ section.products > div.selection {
    border: solid hsl(14, 86%, 42%);
    box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.563);
    transform: translate(47%, -159%);
-   transition: width height transform 1s;
 }
 
 div.selection > button.increment {

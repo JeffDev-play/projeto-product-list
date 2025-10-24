@@ -98,6 +98,10 @@ function addCart(event) {
             cart.appendChild(orderTotal)
             cart.appendChild(carbon)
             cart.appendChild(confirm)
+
+            const confirmScript = document.createElement("script")
+            confirmScript.setAttribute("src", "scripts/confirmOrder.js")
+            document.body.appendChild(confirmScript)
         }
              
          const orderTotalElement = document.querySelector("p.total")

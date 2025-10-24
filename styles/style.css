@@ -56,7 +56,7 @@ section.products > button {
    border-radius: 30px;
    background-color: white;
    border: solid white;
-   box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.563);
+   box-shadow: 2px 3px 4px rgba(95, 94, 94, 0.382);
    transform: translate(30%, -60%);
    transition: width height transform 1s;
 }

@@ -325,9 +325,9 @@ div#OrderConfirmed div#listConfirmed {
 }
 
 div#listConfirmed > section.prodConfirmed {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 div#listConfirmed > hr {

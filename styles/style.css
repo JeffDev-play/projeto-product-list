@@ -328,6 +328,7 @@ div#listConfirmed > section.prodConfirmed {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 div#listConfirmed > hr {
@@ -353,6 +354,8 @@ section.prodConfirmed > div#descriProd {
 section.prodConfirmed > div#descriProd > p#name {
     color: hsl(14, 65%, 9%);
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 section.prodConfirmed > div#descriProd > p#mult {

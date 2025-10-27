@@ -321,7 +321,11 @@ div#OrderConfirmed p {
 div#OrderConfirmed div#listConfirmed {
     background-color: hsl(0, 11%, 96%);
     border-radius: 10px;
-    padding: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 60vh;
 }
 
 div#listConfirmed > section.prodConfirmed {
@@ -334,35 +338,41 @@ div#listConfirmed > section.prodConfirmed {
 div#listConfirmed > hr {
     border: none;
     background-color: hsla(14, 32%, 81%, 0.26);
-    height: 3px;
+    padding-top: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
+   
 }
 
 div#listConfirmed > section.prodConfirmed  img {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     border-radius: 7px;
     object-fit: fill;
+    transition: width 1s, height 1s;
 }
 
 section.prodConfirmed > div#descriProd {
-    margin-left: 20px;
-    line-height: 2em;
+    line-height: 1.4em;
+    margin-left: 14px;
 }
 
 section.prodConfirmed > div#descriProd > p#name {
     color: hsl(14, 65%, 9%);
     font-weight: 600;
+    width: 100px;    
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 0.9em;
+    transition: width 1s, font-size 1s;
 }
 
 section.prodConfirmed > div#descriProd > p#mult {
     display: inline-block;
     color: hsl(14, 81%, 57%);
     font-weight: 600;
-    margin-right: 5px;
+    font-size: 0.9em;
+    transition: font-size 1s;
 }
 
 section.prodConfirmed > div#descriProd > p#fixedPrice {
@@ -370,16 +380,54 @@ section.prodConfirmed > div#descriProd > p#fixedPrice {
     margin-left: 15px;
     color: hsl(20, 4%, 73%);
     font-weight: 600;
-    margin-right: 5px;
+    font-size: 0.9em;
+    transition: font-size 1s;
 }
 
 section.prodConfirmed > p#priceTotal {
-    margin-top: 10px;
-    margin-left: 70px;
-     color: hsl(14, 65%, 9%);
+    margin-top: 3px;
+    margin-left: 30px;
+    color: hsl(14, 65%, 9%);
     font-weight: 800;
-    font-size: 1.2em;
+    font-size: 1em;
+    transition: font-size 1s;
 }
 
+div#listConfirmed > section#orderTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section#orderTotal > p {
+    font-weight: 500;
+    color: black;
+}
+
+section#orderTotal > p#orderTotalValue {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+div#OrderConfirmed > button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 88vw;
+    height: 50px;
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(13, 31%, 94%);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+div#OrderConfirmed > button:hover {
+    cursor: pointer;
+    background-color: hsl(14, 84%, 29%);
+    color: hsl(12, 8%, 75%);
+}
 
 

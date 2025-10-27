@@ -56,3 +56,33 @@ div.selection > button.decrement {
 section#cart > div.carbon > p {
     font-size: 16px;
 }
+
+div#listConfirmed > section.prodConfirmed  img {
+    width: 70px;
+    height: 70px;
+}
+
+section.prodConfirmed > div#descriProd {
+    line-height: 1.9em;
+    margin-top: 5px;
+}
+
+section.prodConfirmed > div#descriProd > p#name {
+    width: 450px;    
+    font-size: 1.1em;
+}
+
+section.prodConfirmed > div#descriProd > p#mult {
+    font-size: 1em;
+}
+
+section.prodConfirmed > div#descriProd > p#fixedPrice {
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+section.prodConfirmed > p#priceTotal {
+    margin-top: 8px;
+    margin-left: 30px;
+    font-size: 1.3em;
+}

@@ -146,3 +146,50 @@ section#cart > button.confirm {
     min-height: 50px;
 }
 
+div#OrderConfirmed {
+    padding: 35px;
+    margin: auto;
+    width: 570px;
+    height: 620px;
+    transition: width 1s, heigth 1s;
+}
+
+div#OrderConfirmed div#listConfirmed {
+    max-height: 310px;
+}
+
+div#listConfirmed > section.prodConfirmed  img {
+    width: 60px;
+    height: 60px;
+}
+
+section.prodConfirmed > div#descriProd {
+    line-height: 1.4em;
+    margin-top: 7px;
+}
+
+section.prodConfirmed > div#descriProd > p#name {
+    width: 250px;    
+    font-size: 0.9em;
+}
+
+section.prodConfirmed > div#descriProd > p#mult {
+    font-size: 0.9em;
+}
+
+section.prodConfirmed > div#descriProd > p#fixedPrice {
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+section.prodConfirmed > p#priceTotal {
+    margin-top: 3px;
+    margin-left: 30px;
+    font-size: 1em;
+}
+
+div#OrderConfirmed > button {
+    width: 500px;
+}
+
+

@@ -291,7 +291,7 @@ section#cart > img.empty {
 }
 
 div#background {
-    display: flex;
+    display: none;
     background-color: rgba(0, 0, 0, 0.315);
     position: fixed;
     top: 0px;

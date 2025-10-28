@@ -295,37 +295,47 @@ div#background {
     background-color: rgba(0, 0, 0, 0.315);
     position: fixed;
     top: 0px;
+    left: 0px;
     z-index: 10;
     width: 100vw;
     height: 100vh;
 }
 
 div#OrderConfirmed {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 15px;
     padding: 25px;
-    line-height: 2.7em;
+    line-height: 2.1em;
     margin-top: 60px;
-    width: 100vw;
+    width: 100dvw;
 }
 
 div#OrderConfirmed h1 {
-    margin-top: 10px;
-    font-size: 2.5em;
+    font-size: 1.8em;
+    transition: font-size 1s;
+}
+
+div#OrderConfirmed img {
+   width: 50px;
+   margin-bottom: 15px;
+   transition: width 1s;
 }
 
 div#OrderConfirmed p {
     color: hsl(7, 20%, 60%);
+    margin-bottom: 5px;
+    transition: font-size 1s;
 }
 
 div#OrderConfirmed div#listConfirmed {
+    display: flex;
+    flex-direction: column;
     background-color: hsl(0, 11%, 96%);
     border-radius: 10px;
     padding: 25px;
-    display: flex;
-    flex-direction: column;
     overflow-y: auto;
-    max-height: 60vh;
 }
 
 div#listConfirmed > section.prodConfirmed {
@@ -393,15 +403,19 @@ section.prodConfirmed > p#priceTotal {
     transition: font-size 1s;
 }
 
-div#listConfirmed > section#orderTotal {
+div#OrderConfirmed section#orderTotal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
 }
 
 section#orderTotal > p {
     font-weight: 500;
     color: black;
+    font-size: 1.2em;
 }
 
 section#orderTotal > p#orderTotalValue {
@@ -410,13 +424,15 @@ section#orderTotal > p#orderTotalValue {
 }
 
 div#OrderConfirmed > button {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 30px;
-    padding: 10px;
-    width: 88vw;
+    padding: 15px;
+    width: 90dvw;
     height: 50px;
     background-color: hsl(14, 86%, 42%);
     color: hsl(13, 31%, 94%);

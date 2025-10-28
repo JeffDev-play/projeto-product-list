@@ -57,6 +57,20 @@ section#cart > div.carbon > p {
     font-size: 16px;
 }
 
+div#OrderConfirmed h1 {
+    font-size: 2.2em;
+    margin-bottom: 3px;
+}
+
+div#OrderConfirmed p {
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+div#OrderConfirmed img {
+   width: 60px;
+}
+
 div#listConfirmed > section.prodConfirmed  img {
     width: 70px;
     height: 70px;

@@ -155,7 +155,7 @@ div#OrderConfirmed {
 }
 
 div#OrderConfirmed div#listConfirmed {
-    max-height: 310px;
+    max-height: 330px;
 }
 
 div#listConfirmed > section.prodConfirmed  img {

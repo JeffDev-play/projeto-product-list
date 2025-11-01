@@ -53,6 +53,10 @@ div.selection > button.increment {
     margin-top: 9px;
 }
 
+div.selection > p.quantity {
+    margin-right: 80px;
+}
+
 div.selection > button.decrement {
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
@@ -123,15 +127,11 @@ section#cart > div.selectedprod > div > button.removeitem {
 }
 
 section#cart > div.carbon {
-    margin: auto; 
-    margin-top: 10px;
-    margin-bottom: 20px;
-    min-height: 60px;
-    min-width: 100px;
+    height: 60px;
 }
 
 section#cart > div.carbon > img {
-    width: 43px;
+    width: 35px;
 }
 section#cart > div.carbon > p {
     font-size: 14px;

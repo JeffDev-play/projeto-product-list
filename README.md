@@ -58,9 +58,6 @@ Durante o desenvolvimento deste projeto consegui:
 
 ## 📷 **Screenshot do projeto**
 
-*(Adicione aqui a imagem do projeto pronto quando quiser)*  
-Exemplo:  
-```md
 ![Preview do projeto](preview.jpg)
 
 
